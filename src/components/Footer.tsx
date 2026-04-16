@@ -36,7 +36,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link to="/" className="inline-block mb-5">
-              <Logo className="h-9 [&_text]:fill-white [&_text:last-of-type]:fill-primary-light" />
+              <Logo className="h-10" variant="white" />
             </Link>
             <p className="text-sm text-gray-500 leading-relaxed mb-6 max-w-xs">
               India's trusted courier aggregator for eCommerce. Ship smarter, reduce RTO, and grow faster.
@@ -46,10 +46,13 @@ export default function Footer() {
                 <Mail className="w-4 h-4" />
                 support@shipsathi.com
               </a>
-              <a href="tel:+917375000072" className="flex items-center gap-2 text-sm text-gray-500 hover:text-primary-400 transition-colors">
-                <Phone className="w-4 h-4" />
-                +91 73750 00072
-              </a>
+              <div>
+                <p className="text-xs text-gray-600 uppercase tracking-wider font-semibold mb-1 ml-6">Sales & Support</p>
+                <a href="tel:+919893357211" className="flex items-center gap-2 text-sm text-gray-500 hover:text-primary-400 transition-colors">
+                  <Phone className="w-4 h-4" />
+                  +91 98933 57211
+                </a>
+              </div>
               <div className="flex items-start gap-2 text-sm text-gray-500">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
                 <span>India</span>
